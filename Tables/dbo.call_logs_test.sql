@@ -43,7 +43,8 @@ CREATE TABLE [dbo].[call_logs_test]
 [has_voicemail] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [has_recording] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [voice_mail_id] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
-[callee_location] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+[callee_location] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[rgtest1] [smallint] NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[call_logs_test] ADD CONSTRAINT [UK_ID_1] UNIQUE NONCLUSTERED ([id]) ON [PRIMARY]
